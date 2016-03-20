@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Zhang Shuailing" pattern="src[MyApplication]:*..*||src:*..*" />
+</component>

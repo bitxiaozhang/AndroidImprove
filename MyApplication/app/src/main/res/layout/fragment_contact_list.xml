@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    android:paddingTop="16dp"
+    tools:context="com.zsl.myapplication.contact.ContactListFragment">
+
+    <Button
+        android:id="@+id/city_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_main_background"
+        android:text="查看" />
+
+    <Button
+        android:id="@+id/label_flow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_main_background"
+        android:text="Label_Flow" />
+
+    <Button
+        android:id="@+id/on_measure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/button_main_background"
+        android:text="OnMeasure()" />
+
+
+</FrameLayout>

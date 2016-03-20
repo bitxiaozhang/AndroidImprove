@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MAIN_APP_THEME">
+        <item name="actionBarStyle">@style/Main_action_bar_style</item>
+    </style>
+    <style name="Main_action_bar_style" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@drawable/main_app_action_background</item>
+        <item name="android:actionBarTabTextStyle">@style/Action_Bar_Title_Text_Style</item>
+        <item name="android:actionMenuTextColor">@style/Action_Bar_Tab_Text_Menu</item>
+        <item name="android:height">60dp</item>
+    </style>
+    
+    <style name="Action_Bar_Title_Text_Style" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/action_bar_text_size</item>
+        <item name="android:textColor">@color/main_actionbar_text_color</item>
+    </style>
+
+    <style name="Action_Bar_Tab_Text_Menu" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">@dimen/action_bar_text_size</item>
+        <item name="android:textColor">@color/main_actionbar_menu_text_color</item>
+    </style>
+
+
+
+    <style name="MyTheme" parent="@android:style/Theme.DeviceDefault"></style>
+
+    <style name="MyTheme.WithActionBar" parent="@style/MyTheme">
+        <item name="android:actionMenuTextAppearance">@style/MyABmenuTextAppearance</item> // 使用自定义的菜单文本风格
+        <item name="android:actionMenuTextColor">#FF4500</item> //定义ActionItem字体颜色
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>  // 使用自定义的actionBarStyle
+    </style>
+
+    <style name="MyActionBarStyle" parent="@android:style/Theme.Holo">
+        <item name="android:displayOptions">showHome|useLogo|showTitle|showCustom</item>
+        <item name="android:background">@color/main_app_action_background</item>  //定义ActionBar背景颜色
+        <item name="android:height">48dip</item>  // 定义ActionBar高度
+        <item name="android:titleTextStyle">@style/MyTitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/MySubTitleTextStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="MyTitleTextStyle" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/main_actionbar_text_color</item> //修改标题字体大小及颜色
+    </style>
+    <style name="MySubTitleTextStyle" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">#FFC0CB</item> //修改子标题字体颜色
+    </style>
+    <style name="MyABmenuTextAppearance" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/main_actionbar_menu_text_color</item>//修改AB菜单项字体风格
+    </style>
+
+        <style name="CustomWindowTitleBackground">
+            <item name="android:background">#778899</item>
+        </style>
+        <style  name="activityTitlebar" parent="android:Theme">
+            <item name="android:windowTitleSize">32dp</item>
+            <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+        </style>
+
+</resources>

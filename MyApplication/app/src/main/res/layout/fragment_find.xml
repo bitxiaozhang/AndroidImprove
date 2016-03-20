@@ -1,0 +1,78 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zsl.myapplication.common.widget.ScrollViewBottomTop
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dddddd"
+        android:fillViewport="true"
+        tools:context="com.zsl.myapplication.find.FindFragment"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/top_view"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@drawable/head_bg"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="#dddddd"
+                android:orientation="horizontal"
+                 >
+                <Button
+                    android:id="@+id/id_tab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主页" />
+
+                <Button
+                    android:id="@+id/id_tab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微博" />
+
+                <Button
+                    android:id="@+id/id_tab3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="相册" />
+
+            </LinearLayout>
+            <com.zsl.myapplication.common.widget.InnerScrollGridView
+                android:id="@+id/find_item_grid_view"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:numColumns="3"
+                />
+            <TextView
+                android:id="@+id/list_view_title"
+                android:layout_height="26dp"
+                android:layout_width="match_parent"
+                android:background="@color/edittext_unline_color_not_focus"
+                android:text="@string/login"
+                android:gravity="bottom|left"
+                android:textSize="13sp"
+                />
+            <com.zsl.myapplication.common.widget.InnerScrollListView
+                android:id="@+id/find_item_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </com.zsl.myapplication.common.widget.ScrollViewBottomTop>
+<include
+    android:id="@+id/tab_bar"
+    layout="@layout/include_tab"/>
+</FrameLayout>

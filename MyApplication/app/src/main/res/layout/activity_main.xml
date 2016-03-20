@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/activity_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+   <EditText
+       android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+       android:textColorHint="#555555"/>
+
+    <EditText
+        android:id="@+id/phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phoneNum"
+        android:textColorHint="#555555"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:textColorHint="#555555"/>
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#AAAAAA"
+        android:textSize="16sp"
+        android:text="插入数据"
+        android:background="#00aa00"
+        android:onClick="insertContact"
+        />
+    <com.zsl.myapplication.common.widget.RainbowBar
+        android:layout_height="4dp"
+        android:layout_width="match_parent"
+        app:rainbowbar_color="@android:color/holo_blue_bright"
+        app:rainbowbar_hspace="80dp"
+        app:rainbowbar_vspace="10dp"
+        android:layout_gravity="center" />
+    <Button android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Dialog"
+        android:textColor="#AAAAAA"
+        android:textSize="16sp"
+        android:background="#00aa00"
+        android:onClick="showDialog"
+        />
+    <TextView
+        android:id="@+id/nick_name"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:text="张三"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"
+        android:background="#CFCFCF"
+        android:onClick="modifyNickName"
+        android:clickable="true"
+        />
+</LinearLayout>
+
