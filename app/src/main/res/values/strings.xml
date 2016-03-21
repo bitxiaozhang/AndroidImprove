@@ -24,4 +24,5 @@
     <string name="title_activity_on_measure_test">OnMeasureTestActivity</string>
     <string name="title_activity_advertisement">AdvertisementActivity</string>
 
+    <string name="help">帮助</string>
 </resources>

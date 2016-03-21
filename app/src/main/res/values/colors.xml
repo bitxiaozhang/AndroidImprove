@@ -12,6 +12,7 @@
     <color name="login_text_color">#333333</color>
     <color name="edittext_unline_color_focus">#009900</color>
     <color name="edittext_unline_color_not_focus">#666666</color>
+    <color name="cyan_blue">#00eeee</color>
 
 
     <drawable name="main_app_action_background">#333333</drawable>
