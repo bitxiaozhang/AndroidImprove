@@ -2,21 +2,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#dddddd"
-    tools:context="com.zsl.myapplication.profile.ProfileFragment"
-    android:orientation="vertical">
+    android:background="@color/activity_background"
+    android:orientation="vertical"
+    tools:context="com.zsl.myapplication.profile.ProfileFragment">
+
     <include
         layout="@layout/action_bar_with_re_back"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        />
+        android:layout_height="48dp" />
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Profile Fragment"
-        android:textColor="#333333"
-        android:textSize="28sp"
-        android:gravity="center_horizontal"
-        />
+    <RelativeLayout
+        android:id="@+id/avatar"
+        style="@style/item_parent_style"
+        android:layout_height="@dimen/item_height_big"
+        android:layout_marginTop="@dimen/common_margin_middle">
+        >
+
+        <TextView
+            android:id="@+id/avatar_textview"
+            style="@style/item_left_title_style"
+            android:text="@string/avatar" />
+
+        <ImageView
+            android:layout_width="@dimen/item_image_size"
+            android:layout_height="@dimen/item_image_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_middle"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nick_name"
+        style="@style/item_parent_style"
+        android:layout_height="@dimen/item_height_middle"
+        android:layout_marginTop="@dimen/common_margin_middle">
+
+        <TextView
+            android:id="@+id/nick_name_textview"
+            style="@style/item_left_title_style"
+            android:text="@string/nick_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email"
+        style="@style/item_parent_style"
+        android:layout_height="@dimen/item_height_middle">
+
+        <TextView
+            android:id="@+id/email_textview"
+            style="@style/item_left_title_style"
+            android:text="@string/e_mail" />
+
+        <include layout="@layout/divider_horizon_one_px_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/telphone"
+        style="@style/item_parent_style"
+        android:layout_height="@dimen/item_height_middle">
+
+        <TextView
+            android:id="@+id/telphone_textview"
+            style="@style/item_left_title_style"
+            android:text="@string/telphone" />
+
+        <include layout="@layout/divider_horizon_one_px_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_collection"
+        style="@style/item_parent_style"
+        android:layout_height="@dimen/item_height_middle"
+        android:layout_marginTop="@dimen/common_margin_middle">
+
+        <TextView
+            android:id="@+id/my_collection__textview"
+            style="@style/item_left_title_style"
+            android:text="@string/my_collection" />
+    </RelativeLayout>
 </LinearLayout>

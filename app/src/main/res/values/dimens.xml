@@ -6,9 +6,22 @@
     <dimen name="action_bar_text_size">18sp</dimen>
     <dimen name="action_bar_menu_text_size">14sp</dimen>
 
+    <dimen name="item_text_size_big">15sp</dimen>
+    <dimen name="item_text_size_middle">14sp</dimen>
+    <dimen name="item_text_size_small">12sp</dimen>
+
     <!--common size-->
     <dimen name="main_button_text_size">16sp</dimen>
     <dimen name="main_button_corner">8dp</dimen>
     <dimen name="main_button_height">40dp</dimen>
     <dimen name="common_padding_middle">12dp</dimen>
+
+    <dimen name="common_margin_middle">12dp</dimen>
+    <dimen name="common_margin_big">16dp</dimen>
+    <dimen name="common_margin_small">8dp</dimen>
+
+    <dimen name="item_height_big">60dp</dimen>
+    <dimen name="item_height_middle">48dp</dimen>
+
+    <dimen name="item_image_size">40dp</dimen>
 </resources>

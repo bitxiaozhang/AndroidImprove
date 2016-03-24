@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 
 import com.zsl.myapplication.R;
 
+import java.util.Observable;
+
 /**
  * A simple {@link Fragment} subclass.
  */

@@ -6,6 +6,7 @@
     <color name="main_app_action_background">#333333</color>
     <color name="main_actionbar_text_color">#ffffff</color>
     <color name="activity_background">#dddddd</color>
+    <color name="activity_item_background">#ffffff</color>
     <color name="main_actionbar_menu_text_color">#ff0000</color>
     <color name="transparant">#00000000</color>
     <color name="red">#aa0000</color>
@@ -13,9 +14,12 @@
     <color name="edittext_unline_color_focus">#009900</color>
     <color name="edittext_unline_color_not_focus">#666666</color>
     <color name="cyan_blue">#00eeee</color>
+    <color name="main_item_text_color">#333333</color>
 
 
     <drawable name="main_app_action_background">#333333</drawable>
     <drawable name="transparant">#00000000</drawable>
     <drawable name="white">#ffffff</drawable>
+    <drawable name="pressed_item_background">#dddddd</drawable>
+    <drawable name="unpressed_item_background">#ffffff</drawable>
 </resources>

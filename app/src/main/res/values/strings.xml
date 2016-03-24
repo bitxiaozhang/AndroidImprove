@@ -25,4 +25,9 @@
     <string name="title_activity_advertisement">AdvertisementActivity</string>
 
     <string name="help">帮助</string>
+    <string name="avatar">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="e_mail">邮箱</string>
+    <string name="telphone">手机</string>
+    <string name="my_collection">我收藏的</string>
 </resources>
