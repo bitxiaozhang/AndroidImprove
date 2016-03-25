@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.zsl.myapplication.R;
+import com.zsl.myapplication.common.utils.SharedPreferenceUtils;
 import com.zsl.myapplication.common.widget.LineIndicatorView;
 import com.zsl.myapplication.home.HomeAcitivity;
 import com.zsl.myapplication.login.LoginActivity;
@@ -25,6 +26,7 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import cn.bmob.v3.Bmob;
 
 public class AdvertisementActivity extends FragmentActivity implements OnPageChangeListener{
     @Bind(R.id.image_view_pager) ViewPager imageViewPager;
@@ -37,6 +39,7 @@ public class AdvertisementActivity extends FragmentActivity implements OnPageCha
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advertisement);
         ButterKnife.bind(this);
+        Bmob.initialize(this, "ca5489a4bd7fca2778d756958d38b402");
         initData();
     }
 
@@ -62,11 +65,9 @@ public class AdvertisementActivity extends FragmentActivity implements OnPageCha
 
     }
 
-
-
-
     public void pushActivity(View view){
-        Intent intent = new Intent(this, HomeAcitivity.class);
+        boolean isLogined = SharedPreferenceUtils.hasLogin();
+        Intent intent = isLogined?new Intent(this,HomeAcitivity.class):new Intent(this, LoginActivity.class);
         startActivity(intent);
         finish();
     }
