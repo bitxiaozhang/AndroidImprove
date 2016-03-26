@@ -2,6 +2,8 @@ package com.zsl.myapplication;
 
 import android.app.Application;
 
+import com.zsl.myapplication.common.utils.SharedPreferenceUtils;
+
 /**
  * Created by zsl on 3/15/16.
  */

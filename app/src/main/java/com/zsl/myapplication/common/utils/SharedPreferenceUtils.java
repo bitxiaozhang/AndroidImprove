@@ -14,16 +14,32 @@ public class SharedPreferenceUtils {
     public static boolean hasLogin(){
         boolean result = false;
         Context context = MainApplication.getInstance().getBaseContext();
-        SharedPreferences sharedPreferences = context.getSharedPreferences("login",Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = context.getSharedPreferences("appState",Context.MODE_PRIVATE);
         result = sharedPreferences.getBoolean("loginState",false);
         return result;
     }
 
     public static synchronized void setLoginState(boolean isLogin){
         Context context = MainApplication.getInstance().getBaseContext();
-        SharedPreferences sharedPreferences = context.getSharedPreferences("login",Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = context.getSharedPreferences("appState",Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean("loginState",isLogin);
+        editor.commit();
+    }
+
+    public static boolean isFirstLaunch(){
+        boolean result = false;
+        Context context = MainApplication.getInstance().getBaseContext();
+        SharedPreferences sharedPreferences = context.getSharedPreferences("appState", Context.MODE_PRIVATE);
+        result = sharedPreferences.getBoolean("isFirstLaunch",true);
+        return result;
+    }
+
+    public static synchronized void setIsFirstLaunch(boolean isFirstLaunch){
+        Context context = MainApplication.getInstance().getBaseContext();
+        SharedPreferences sharedPreferences = context.getSharedPreferences("appState",Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean("isFirstLaunch",isFirstLaunch);
         editor.commit();
     }
 }

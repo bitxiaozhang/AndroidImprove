@@ -82,4 +82,14 @@
             style="@style/item_left_title_style"
             android:text="@string/my_collection" />
     </RelativeLayout>
+    <Button
+        android:id="@+id/quit_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_middle"
+        android:layout_marginTop="@dimen/common_margin_middle"
+        android:textColor="@color/red"
+        android:text="@string/quit_user"
+        android:textSize="@dimen/item_text_size_small"
+        android:gravity="center"
+        android:background="@drawable/selector_common_item"/>
 </LinearLayout>

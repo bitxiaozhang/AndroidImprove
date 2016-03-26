@@ -30,4 +30,5 @@
     <string name="e_mail">邮箱</string>
     <string name="telphone">手机</string>
     <string name="my_collection">我收藏的</string>
+    <string name="quit_user">用户退出</string>
 </resources>

@@ -7,5 +7,6 @@ public interface ILoginView {
     public void onClearText();
     public void onLoginResult(Boolean result,int code);
     public void onSetProgressVisible(int visibility);
+    public void setLayout();
 
 }
